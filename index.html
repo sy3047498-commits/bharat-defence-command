@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bharat Defence Command - भारत की रक्षा, सेना, मिसाइल, वायुसेना और नौसेना से जुड़ी ताजा खबरें हिंदी और अंग्रेजी में।">
+  <title>Bharat Defence Command | Defence News</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+      background: #f3f5f8;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #101c35;
+      color: white;
+      padding: 22px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #f5b942;
+    }
+
+    header p {
+      font-size: 13px;
+      color: #d7dfec;
+    }
+
+    nav {
+      background: #17365e;
+      padding: 12px 5%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #f5b942;
+    }
+
+    .breaking {
+      background: #b91c2c;
+      color: white;
+      padding: 10px 5%;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 28px auto;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #10213e, #24558a);
+      color: white;
+      padding: 42px 30px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #e1eaf6;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #f5b942;
+      color: #172033;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .ad-box {
+      border: 1px dashed #aab4c2;
+      background: white;
+      color: #657084;
+      text-align: center;
+      padding: 22px 10px;
+      margin: 24px 0;
+      border-radius: 8px;
+    }
+
+    .section-title {
+      font-size: 25px;
+      border-left: 5px solid #c62836;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px #14213d12;
+    }
+
+    .card-top {
+      background: #dce6f2;
+      color: #17365e;
+      min-height: 125px;
+      display: grid;
+      place-items: center;
+      font-size: 40px;
+    }
+
+    .card-content {
+      padding: 18px;
+    }
+
+    .tag {
+      display: inline-block;
+      color: #b91c2c;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #657084;
+      font-size: 14px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #17365e;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .notice {
+      margin-top: 25px;
+      background: #fff7df;
+      border: 1px solid #f1d58b;
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #101c35;
+      color: white;
+      text-align: center;
+      padding: 28px 5%;
+    }
+
+    footer a {
+      color: #f5b942;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        align-items: flex-start;
+      }
+
+      nav {
+        gap: 14px;
+      }
+
+      .hero {
+        padding: 28px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+      <div class="logo">BHARAT <span>DEFENCE COMMAND</span></div>
+      <p>भारत की रक्षा समाचार सेवा | India's Defence News</p>
+    </div>
+    <div>🇮🇳 जय हिंद</div>
+  </header>
+
+  <nav>
+    <a href="#home">होम</a>
+    <a href="#army">थल सेना</a>
+    <a href="#airforce">वायुसेना</a>
+    <a href="#navy">नौसेना</a>
+    <a href="#missiles">मिसाइल</a>
+    <a href="#technology">डिफेंस टेक्नोलॉजी</a>
+  </nav>
+
+  <div class="breaking">
+    DEFENCE NEWS | रक्षा समाचार और तकनीक की जानकारी
+  </div>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <h1>भारत की रक्षा शक्ति की पूरी जानकारी</h1>
+      <p>
+        भारतीय सेना, वायुसेना, नौसेना, मिसाइल सिस्टम और नई रक्षा तकनीकों
+        से जुड़ी खबरें और विश्लेषण एक ही जगह पढ़ें।
+      </p>
+      <a class="button" href="#latest">ताजा खबरें पढ़ें</a>
+    </section>
+
+    <div class="ad-box">
+      विज्ञापन स्थान | Advertisement Space
+    </div>
+
+    <section id="latest">
+      <h2 class="section-title">रक्षा समाचार की प्रमुख श्रेणियाँ</h2>
+
+      <div class="news-grid">
+        <article class="card" id="army">
+          <div class="card-top">🪖</div>
+          <div class="card-content">
+            <span class="tag">INDIAN ARMY</span>
+            <h3>भारतीय थल सेना</h3>
+            <p>सेना के अभ्यास, उपकरण, आधुनिकीकरण और महत्वपूर्ण अपडेट पढ़ें।</p>
+            <a href="#contact">और जानकारी →</a>
+          </div>
+        </article>
+
+        <article class="card" id="airforce">
+          <div class="card-top">✈️</div>
+          <div class="card-content">
+            <span class="tag">INDIAN AIR FORCE</span>
+            <h3>भारतीय वायुसेना</h3>
+            <p>लड़ाकू विमान, हेलीकॉप्टर, वायु रक्षा और विमानन तकनीक की जानकारी।</p>
+            <a href="#contact">और जानकारी →</a>
+          </div>
+        </article>
+
+        <article class="card" id="navy">
+          <div class="card-top">⚓</div>
+          <div class="card-content">
+            <span class="tag">INDIAN NAVY</span>
+            <h3>भारतीय नौसेना</h3>
+            <p>युद्धपोत, पनडुब्बियाँ, नौसैनिक अभ्यास और समुद्री सुरक्षा।</p>
+            <a href="#contact">और जानकारी →</a>
+          </div>
+        </article>
+
+        <article class="card" id="missiles">
+          <div class="card-top">🚀</div>
+          <div class="card-content">
+            <span class="tag">MISSILE SYSTEMS</span>
+            <h3>मिसाइल और रक्षा प्रणाली</h3>
+            <p>भारत की मिसाइल परियोजनाओं और रक्षा प्रणालियों की जानकारी।</p>
+            <a href="#contact">और जानकारी →</a>
+          </div>
+        </article>
+
+        <article class="card" id="technology">
+          <div class="card-top">🛰️</div>
+          <div class="card-content">
+            <span class="tag">DEFENCE TECHNOLOGY</span>
+            <h3>रक्षा तकनीक</h3>
+            <p>ड्रोन, रडार, अंतरिक्ष तकनीक और स्वदेशी रक्षा परियोजनाएँ।</p>
+            <a href="#contact">और जानकारी →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">🌍</div>
+          <div class="card-content">
+            <span class="tag">WORLD DEFENCE</span>
+            <h3>विश्व रक्षा समाचार</h3>
+            <p>दुनिया भर की रक्षा तकनीक और अंतरराष्ट्रीय रक्षा घटनाओं का विश्लेषण।</p>
+            <a href="#contact">और जानकारी →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="ad-box">
+      विज्ञापन स्थान | यहाँ भविष्य में विज्ञापन जोड़े जा सकते हैं
+    </div>
+
+    <div class="notice">
+      <strong>महत्वपूर्ण सूचना:</strong>
+      यह वेबसाइट का शुरुआती डेमो है। यहाँ दिखाई गई श्रेणियाँ उदाहरण हैं,
+      लाइव समाचार नहीं। वास्तविक समाचार प्रकाशित करने से पहले विश्वसनीय
+      स्रोतों से तथ्यों की पुष्टि करें।
+    </div>
+  </main>
+
+  <footer id="contact">
+    <h2>BHARAT DEFENCE COMMAND</h2>
+    <p>भारत की रक्षा, तकनीक और सुरक्षा संबंधी जानकारी</p>
+    <p style="margin-top:12px">
+      <a href="#home">होम</a>
+      <a href="#latest">समाचार</a>
+      <a href="mailto:contact@example.com">संपर्क</a>
+    </p>
+    <p style="margin-top:15px;font-size:12px">
+      © 2026 Bharat Defence Command. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
