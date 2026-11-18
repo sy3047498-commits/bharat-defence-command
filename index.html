@@ -1,343 +1,195 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bharat Defence Command - भारत की रक्षा, सेना, मिसाइल, वायुसेना और नौसेना से जुड़ी ताजा खबरें हिंदी और अंग्रेजी में।">
-  <title>Bharat Defence Command | Defence News</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, "Noto Sans Devanagari", sans-serif;
-      background: #f3f5f8;
-      color: #172033;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #101c35;
-      color: white;
-      padding: 22px 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .logo {
-      font-size: 25px;
-      font-weight: bold;
-    }
-
-    .logo span {
-      color: #f5b942;
-    }
-
-    header p {
-      font-size: 13px;
-      color: #d7dfec;
-    }
-
-    nav {
-      background: #17365e;
-      padding: 12px 5%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 22px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #f5b942;
-    }
-
-    .breaking {
-      background: #b91c2c;
-      color: white;
-      padding: 10px 5%;
-      font-weight: bold;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 28px auto;
-    }
-
-    .hero {
-      background: linear-gradient(120deg, #10213e, #24558a);
-      color: white;
-      padding: 42px 30px;
-      border-radius: 12px;
-      margin-bottom: 28px;
-    }
-
-    .hero h1 {
-      font-size: clamp(28px, 5vw, 44px);
-      margin-bottom: 12px;
-    }
-
-    .hero p {
-      max-width: 650px;
-      color: #e1eaf6;
-      margin-bottom: 20px;
-    }
-
-    .button {
-      display: inline-block;
-      background: #f5b942;
-      color: #172033;
-      padding: 10px 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .ad-box {
-      border: 1px dashed #aab4c2;
-      background: white;
-      color: #657084;
-      text-align: center;
-      padding: 22px 10px;
-      margin: 24px 0;
-      border-radius: 8px;
-    }
-
-    .section-title {
-      font-size: 25px;
-      border-left: 5px solid #c62836;
-      padding-left: 12px;
-      margin-bottom: 20px;
-    }
-
-    .news-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 3px 12px #14213d12;
-    }
-
-    .card-top {
-      background: #dce6f2;
-      color: #17365e;
-      min-height: 125px;
-      display: grid;
-      place-items: center;
-      font-size: 40px;
-    }
-
-    .card-content {
-      padding: 18px;
-    }
-
-    .tag {
-      display: inline-block;
-      color: #b91c2c;
-      font-size: 12px;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    .card h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #657084;
-      font-size: 14px;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 12px;
-      color: #17365e;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .notice {
-      margin-top: 25px;
-      background: #fff7df;
-      border: 1px solid #f1d58b;
-      border-radius: 8px;
-      padding: 16px;
-      font-size: 14px;
-    }
-
-    footer {
-      margin-top: 40px;
-      background: #101c35;
-      color: white;
-      text-align: center;
-      padding: 28px 5%;
-    }
-
-    footer a {
-      color: #f5b942;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        align-items: flex-start;
-      }
-
-      nav {
-        gap: 14px;
-      }
-
-      .hero {
-        padding: 28px 20px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BHARAT DEFENCE COMMAND - Hindi and English Defence News Portal.">
+<title>BHARAT DEFENCE COMMAND | Defence News</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#06162c;--blue:#102e50;--gold:#f5b82e;--red:#c52232;--white:#fff}
+body{font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#eef2f7;color:#172033;line-height:1.6}
+header{background:var(--navy);color:white;padding:22px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:clamp(22px,4vw,36px);font-weight:900;letter-spacing:1px}
+.logo span{color:var(--gold)}
+.tagline{color:#d5dfeb;font-size:14px}
+.jai{font-size:22px;color:var(--gold);font-weight:bold}
+.tools{display:flex;gap:8px;align-items:center}
+.tools input{padding:11px;border:0;border-radius:6px;max-width:190px}
+button{cursor:pointer;border:0;border-radius:6px;padding:10px 15px;font-weight:bold}
+.gold{background:var(--gold);color:#101c35}
+nav{background:#102b4d;display:flex;flex-wrap:wrap;gap:5px;padding:10px 4%}
+nav a{color:white;text-decoration:none;padding:9px 13px;font-weight:bold}
+nav a:hover{background:var(--gold);color:#111}
+.breaking{display:flex;background:white;align-items:center;overflow:hidden;border-bottom:2px solid var(--gold)}
+.breaking strong{background:var(--red);color:white;padding:12px 18px;white-space:nowrap}
+.breaking span{padding:10px 16px;white-space:nowrap}
+.container{max-width:1250px;width:92%;margin:25px auto}
+.hero{min-height:340px;border-radius:12px;overflow:hidden;background:linear-gradient(90deg,#06162c 10%,#102e50 65%,#1b4770);color:white;display:flex;align-items:center;padding:35px}
+.hero-content{max-width:680px}
+.hero h1{font-size:clamp(30px,5vw,49px);line-height:1.2;margin-bottom:16px}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:18px;color:#e0e8f1;margin-bottom:22px}
+.section{margin:32px 0}
+.section-title{font-size:26px;border-left:5px solid var(--red);padding-left:12px;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:17px}
+.card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 3px 14px #10213e16;transition:.2s}
+.card:hover{transform:translateY(-4px)}
+.card-top{height:145px;background:linear-gradient(135deg,#102b4d,#285987);display:grid;place-items:center;color:white;font-size:52px}
+.card-content{padding:17px}
+.tag{color:#b52232;font-size:12px;font-weight:bold}
+.card h3{font-size:19px;margin:7px 0}
+.card p{font-size:14px;color:#647084}
+.card a{display:inline-block;margin-top:12px;color:#17365e;font-weight:bold;text-decoration:none}
+.news-card{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:16px;background:white;border-bottom:1px solid #ddd}
+.news-icon{background:#e6edf5;border-radius:8px;display:grid;place-items:center;font-size:32px}
+.news-card h3{font-size:17px}
+.news-card p{font-size:13px;color:#647084}
+.notice{background:#fff6df;border:1px solid #efd28a;border-radius:9px;padding:17px;margin:25px 0}
+.video-panel{background:var(--navy);color:white;border-radius:10px;padding:22px}
+.video-panel a{color:var(--gold);font-weight:bold}
+footer{background:var(--navy);color:white;text-align:center;padding:30px 15px;margin-top:40px}
+footer a{color:var(--gold);margin:0 8px;text-decoration:none}
+.hidden{display:none}
+@media(max-width:600px){
+header{align-items:flex-start}
+.tools{width:100%;flex-wrap:wrap}
+.tools input{flex:1;max-width:none}
+.hero{padding:25px 20px;min-height:280px}
+nav{gap:0}
+nav a{padding:8px;font-size:13px}
+}
+</style>
 </head>
-
 <body>
-  <header>
-    <div>
-      <div class="logo">BHARAT <span>DEFENCE COMMAND</span></div>
-      <p>भारत की रक्षा समाचार सेवा | India's Defence News</p>
-    </div>
-    <div>🇮🇳 जय हिंद</div>
-  </header>
 
-  <nav>
-    <a href="#home">होम</a>
-    <a href="#army">थल सेना</a>
-    <a href="#airforce">वायुसेना</a>
-    <a href="#navy">नौसेना</a>
-    <a href="#missiles">मिसाइल</a>
-    <a href="#technology">डिफेंस टेक्नोलॉजी</a>
-  </nav>
+<header>
+<div>
+<div class="logo">BHARAT <span>DEFENCE COMMAND</span></div>
+<p class="tagline">भारत की रक्षा समाचार सेवा | India's Defence News Portal</p>
+</div>
+<div class="jai">🇮🇳 JAI HIND</div>
+<div class="tools">
+<input id="search" type="search" placeholder="Search Defence News...">
+<button class="gold" onclick="searchNews()">🔍</button>
+<button class="gold" onclick="toggleLanguage()" id="langBtn">English</button>
+</div>
+</header>
 
-  <div class="breaking">
-    DEFENCE NEWS | रक्षा समाचार और तकनीक की जानकारी
-  </div>
+<nav>
+<a href="#home">होम | Home</a>
+<a href="#army">थल सेना | Army</a>
+<a href="#airforce">वायुसेना | Air Force</a>
+<a href="#navy">नौसेना | Navy</a>
+<a href="#missiles">मिसाइल | Missiles</a>
+<a href="#technology">टेक्नोलॉजी | Technology</a>
+<a href="#videos">वीडियो | Videos</a>
+<a href="#contact">संपर्क | Contact</a>
+</nav>
 
-  <main class="container" id="home">
-    <section class="hero">
-      <h1>भारत की रक्षा शक्ति की पूरी जानकारी</h1>
-      <p>
-        भारतीय सेना, वायुसेना, नौसेना, मिसाइल सिस्टम और नई रक्षा तकनीकों
-        से जुड़ी खबरें और विश्लेषण एक ही जगह पढ़ें।
-      </p>
-      <a class="button" href="#latest">ताजा खबरें पढ़ें</a>
-    </section>
+<div class="breaking">
+<strong>⚡ BREAKING NEWS</strong>
+<span>BHARAT DEFENCE COMMAND | Defence News & Analysis | रक्षा समाचार</span>
+</div>
 
-    <div class="ad-box">
-      विज्ञापन स्थान | Advertisement Space
-    </div>
+<main class="container" id="home">
 
-    <section id="latest">
-      <h2 class="section-title">रक्षा समाचार की प्रमुख श्रेणियाँ</h2>
+<section class="hero">
+<div class="hero-content">
+<h1>भारत की <span>रक्षा शक्ति</span><br>एक ही जगह</h1>
+<p>भारतीय सेना, वायुसेना, नौसेना, मिसाइल और आधुनिक रक्षा तकनीक की खबरें और विश्लेषण हिंदी एवं English में।</p>
+<a class="gold" href="#latest" style="display:inline-block;padding:12px 20px;text-decoration:none;border-radius:6px;font-weight:bold;color:#111">ताजा अपडेट पढ़ें →</a>
+</div>
+</section>
 
-      <div class="news-grid">
-        <article class="card" id="army">
-          <div class="card-top">🪖</div>
-          <div class="card-content">
-            <span class="tag">INDIAN ARMY</span>
-            <h3>भारतीय थल सेना</h3>
-            <p>सेना के अभ्यास, उपकरण, आधुनिकीकरण और महत्वपूर्ण अपडेट पढ़ें।</p>
-            <a href="#contact">और जानकारी →</a>
-          </div>
-        </article>
+<section class="section" id="latest">
+<h2 class="section-title">⭐ रक्षा समाचार की प्रमुख श्रेणियाँ | Defence Categories</h2>
+<div class="grid">
+<article class="card" id="army">
+<div class="card-top">🪖</div>
+<div class="card-content"><span class="tag">INDIAN ARMY</span><h3>भारतीय थल सेना</h3><p>सेना के अभ्यास, हथियार, जवान और आधुनिकीकरण की जानकारी।</p><a href="#contact">और जानें →</a></div>
+</article>
+<article class="card" id="airforce">
+<div class="card-top">✈️</div>
+<div class="card-content"><span class="tag">INDIAN AIR FORCE</span><h3>भारतीय वायुसेना</h3><p>लड़ाकू विमान, हेलीकॉप्टर और वायु रक्षा प्रणाली।</p><a href="#contact">और जानें →</a></div>
+</article>
+<article class="card" id="navy">
+<div class="card-top">⚓</div>
+<div class="card-content"><span class="tag">INDIAN NAVY</span><h3>भारतीय नौसेना</h3><p>युद्धपोत, पनडुब्बियाँ और समुद्री सुरक्षा।</p><a href="#contact">और जानें →</a></div>
+</article>
+<article class="card" id="missiles">
+<div class="card-top">🚀</div>
+<div class="card-content"><span class="tag">MISSILE SYSTEMS</span><h3>मिसाइल और रक्षा प्रणाली</h3><p>अग्नि, ब्रह्मोस और भारत की रक्षा परियोजनाएँ।</p><a href="#contact">और जानें →</a></div>
+</article>
+<article class="card" id="technology">
+<div class="card-top">🛰️</div>
+<div class="card-content"><span class="tag">DEFENCE TECHNOLOGY</span><h3>रक्षा तकनीक</h3><p>ड्रोन, रडार, AI और स्वदेशी तकनीक।</p><a href="#contact">और जानें →</a></div>
+</article>
+<article class="card">
+<div class="card-top">🌍</div>
+<div class="card-content"><span class="tag">WORLD DEFENCE</span><h3>विश्व रक्षा समाचार</h3><p>अंतरराष्ट्रीय रक्षा घटनाओं और तकनीक का विश्लेषण।</p><a href="#contact">और जानें →</a></div>
+</article>
+</div>
+</section>
 
-        <article class="card" id="airforce">
-          <div class="card-top">✈️</div>
-          <div class="card-content">
-            <span class="tag">INDIAN AIR FORCE</span>
-            <h3>भारतीय वायुसेना</h3>
-            <p>लड़ाकू विमान, हेलीकॉप्टर, वायु रक्षा और विमानन तकनीक की जानकारी।</p>
-            <a href="#contact">और जानकारी →</a>
-          </div>
-        </article>
+<section class="section">
+<h2 class="section-title">📰 Latest Updates | ताजा अपडेट</h2>
+<div id="newsList">
+<article class="news-card">
+<div class="news-icon">🇮🇳</div>
+<div><span class="tag">WELCOME</span><h3>BHARAT DEFENCE COMMAND में आपका स्वागत है</h3><p>हमारी वेबसाइट पर रक्षा समाचार और विश्लेषण के अपडेट जल्द प्रकाशित किए जाएँगे।</p></div>
+</article>
+<article class="news-card">
+<div class="news-icon">🛡️</div>
+<div><span class="tag">DEFENCE</span><h3>भारत की रक्षा तकनीक | India's Defence Technology</h3><p>स्वदेशी रक्षा परियोजनाओं और नई तकनीकों की जानकारी इस सेक्शन में मिलेगी।</p></div>
+</article>
+</div>
+</section>
 
-        <article class="card" id="navy">
-          <div class="card-top">⚓</div>
-          <div class="card-content">
-            <span class="tag">INDIAN NAVY</span>
-            <h3>भारतीय नौसेना</h3>
-            <p>युद्धपोत, पनडुब्बियाँ, नौसैनिक अभ्यास और समुद्री सुरक्षा।</p>
-            <a href="#contact">और जानकारी →</a>
-          </div>
-        </article>
+<section class="section video-panel" id="videos">
+<h2>▶ हमारे YouTube चैनल पर</h2>
+<h3>BHARAT DEFENCE COMMAND</h3>
+<p>रक्षा समाचार, डॉक्यूमेंट्री और सैन्य तकनीक से जुड़े वीडियो देखें।</p>
+<a href="https://www.youtube.com/@SachinyadavYadav1947" target="_blank" rel="noopener">YouTube Channel देखें →</a>
+</section>
 
-        <article class="card" id="missiles">
-          <div class="card-top">🚀</div>
-          <div class="card-content">
-            <span class="tag">MISSILE SYSTEMS</span>
-            <h3>मिसाइल और रक्षा प्रणाली</h3>
-            <p>भारत की मिसाइल परियोजनाओं और रक्षा प्रणालियों की जानकारी।</p>
-            <a href="#contact">और जानकारी →</a>
-          </div>
-        </article>
+<div class="notice">
+<strong>महत्वपूर्ण सूचना | Important Notice</strong>
+<p>यह एक स्वतंत्र रक्षा समाचार और जानकारी पोर्टल है। आधिकारिक खबरों के लिए सरकारी एवं विश्वसनीय स्रोतों से पुष्टि करें। उदाहरण सामग्री को लाइव समाचार न समझें।</p>
+</div>
 
-        <article class="card" id="technology">
-          <div class="card-top">🛰️</div>
-          <div class="card-content">
-            <span class="tag">DEFENCE TECHNOLOGY</span>
-            <h3>रक्षा तकनीक</h3>
-            <p>ड्रोन, रडार, अंतरिक्ष तकनीक और स्वदेशी रक्षा परियोजनाएँ।</p>
-            <a href="#contact">और जानकारी →</a>
-          </div>
-        </article>
+</main>
 
-        <article class="card">
-          <div class="card-top">🌍</div>
-          <div class="card-content">
-            <span class="tag">WORLD DEFENCE</span>
-            <h3>विश्व रक्षा समाचार</h3>
-            <p>दुनिया भर की रक्षा तकनीक और अंतरराष्ट्रीय रक्षा घटनाओं का विश्लेषण।</p>
-            <a href="#contact">और जानकारी →</a>
-          </div>
-        </article>
-      </div>
-    </section>
+<footer id="contact">
+<h2>BHARAT DEFENCE COMMAND 🇮🇳</h2>
+<p>भारत की रक्षा, तकनीक और सुरक्षा संबंधी जानकारी</p>
+<p style="margin:15px">
+<a href="#home">Home</a>
+<a href="#latest">News</a>
+<a href="#videos">Videos</a>
+<a href="https://www.youtube.com/@SachinyadavYadav1947">YouTube</a>
+</p>
+<p>© 2026 Bharat Defence Command. All rights reserved.</p>
+<p>जय हिंद | Jai Hind</p>
+</footer>
 
-    <div class="ad-box">
-      विज्ञापन स्थान | यहाँ भविष्य में विज्ञापन जोड़े जा सकते हैं
-    </div>
-
-    <div class="notice">
-      <strong>महत्वपूर्ण सूचना:</strong>
-      यह वेबसाइट का शुरुआती डेमो है। यहाँ दिखाई गई श्रेणियाँ उदाहरण हैं,
-      लाइव समाचार नहीं। वास्तविक समाचार प्रकाशित करने से पहले विश्वसनीय
-      स्रोतों से तथ्यों की पुष्टि करें।
-    </div>
-  </main>
-
-  <footer id="contact">
-    <h2>BHARAT DEFENCE COMMAND</h2>
-    <p>भारत की रक्षा, तकनीक और सुरक्षा संबंधी जानकारी</p>
-    <p style="margin-top:12px">
-      <a href="#home">होम</a>
-      <a href="#latest">समाचार</a>
-      <a href="mailto:contact@example.com">संपर्क</a>
-    </p>
-    <p style="margin-top:15px;font-size:12px">
-      © 2026 Bharat Defence Command. All rights reserved.
-    </p>
-  </footer>
-</body> 
+<script>
+function searchNews(){
+const q=document.getElementById('search').value.toLowerCase();
+document.querySelectorAll('.card,.news-card').forEach(item=>{
+item.classList.toggle('hidden',!item.innerText.toLowerCase().includes(q));
+});
+}
+document.getElementById('search').addEventListener('keydown',e=>{
+if(e.key==='Enter')searchNews();
+});
+let english=false;
+function toggleLanguage(){
+english=!english;
+document.getElementById('langBtn').innerText=english?'हिंदी':'English';
+document.documentElement.lang=english?'en':'hi';
+}
+</script>
+</body>
 </html>
